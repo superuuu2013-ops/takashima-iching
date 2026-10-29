@@ -448,103 +448,17 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- SECTION 2: 二、卦象与爻辞 (Hexagram & Line Texts) -->
-          <div class="paper-card rounded-2xl p-5 sm:p-6 space-y-4">
-            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#e4d9c5] dark:border-[#332d27] pb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded bg-[#a62c2b] text-white font-serif-sc text-xs font-bold flex items-center justify-center">二</span>
-                <h3 class="font-serif-sc font-bold text-lg">卦象与爻辞（经传原文）</h3>
-              </div>
-              <!-- Quick switcher to inspect any of the 6 lines of the current hexagram -->
-              <div class="flex items-center gap-1 text-xs">
-                <span class="opacity-65 mr-1">切换参看六爻：</span>
-                <div id="line-inspector-buttons" class="flex items-center gap-1"></div>
-              </div>
-            </div>
+      <!-- ==================== 全屏通栏：问事深度解答、AI智算推演、经传卦爻与高岛全典 (2, 3, 4, 5, 6 全屏对齐) ==================== -->
+      <div class="w-full space-y-6 pt-1">
 
-            <div class="space-y-3.5 text-sm leading-relaxed">
-              <!-- 本卦卦辞与大象传 -->
-              <div class="p-3.5 rounded-xl bg-amber-950/[0.025] dark:bg-white/[0.025] border-l-4 border-[#b58938] space-y-1.5">
-                <div class="font-serif-sc font-bold text-base" id="res-guaci-line"></div>
-                <div class="text-xs sm:text-sm opacity-85" id="res-daxiang-line"></div>
-                <div class="text-xs opacity-75" id="res-tuan-line"></div>
-              </div>
-
-              <!-- 动爻爻辞与小象传 -->
-              <div class="p-3.5 rounded-xl bg-[#a62c2b]/[0.05] dark:bg-[#a62c2b]/[0.12] border-l-4 border-[#a62c2b] space-y-1.5">
-                <div class="flex items-center justify-between">
-                  <span class="font-serif-sc font-bold text-base text-[#a62c2b] dark:text-red-300" id="res-yaoci-line"></span>
-                  <span class="text-[11px] px-2 py-0.5 rounded bg-[#a62c2b] text-white font-serif-sc" id="res-yaoci-tag">本卦动爻</span>
-                </div>
-                <div class="text-xs sm:text-sm opacity-90" id="res-xiaoxiang-line"></div>
-              </div>
-
-              <!-- 变卦（之卦）卦辞简述 -->
-              <div class="p-3.5 rounded-xl bg-amber-950/[0.025] dark:bg-white/[0.025] border-l-4 border-stone-500 space-y-1">
-                <div class="font-serif-sc font-bold text-sm" id="res-changed-guaci-line"></div>
-                <div class="text-xs opacity-80" id="res-changed-daxiang-line"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECTION 3: 三、高岛易断精要 (Takashima Ekidan Analysis from Book) -->
-          <div class="paper-card rounded-2xl p-5 sm:p-6 space-y-4">
-            <div class="flex items-center justify-between border-b border-[#e4d9c5] dark:border-[#332d27] pb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded bg-[#a62c2b] text-white font-serif-sc text-xs font-bold flex items-center justify-center">三</span>
-                <h3 class="font-serif-sc font-bold text-lg">高岛易断精要（《高岛易断·占断破解》原典）</h3>
-              </div>
-              <span class="text-xs opacity-65 font-serif-sc">高岛吞象 著 · 王治本 译</span>
-            </div>
-
-            <div class="space-y-4 text-sm leading-relaxed">
-              <!-- 核心义理 -->
-              <div class="space-y-1.5">
-                <h4 class="font-serif-sc font-bold text-sm text-[#8c6520] dark:text-amber-300 flex items-center gap-1.5">
-                  <span>◆</span>
-                  <span>高岛吞象 · 全卦核心义理与大象总断</span>
-                </h4>
-                <p id="res-takashima-hex-summary" class="text-xs sm:text-sm leading-relaxed opacity-90 pl-4 border-l-2 border-amber-700/30"></p>
-                <div id="res-takashima-hex-zhan" class="text-xs opacity-80 pl-4 pt-1"></div>
-              </div>
-
-              <!-- 动爻断法重点 -->
-              <div class="space-y-1.5">
-                <h4 class="font-serif-sc font-bold text-sm text-[#a62c2b] dark:text-red-300 flex items-center gap-1.5">
-                  <span>◆</span>
-                  <span id="res-takashima-line-heading">高岛吞象 · 动爻义理与断法重点</span>
-                </h4>
-                <p id="res-takashima-line-comm" class="text-xs sm:text-sm leading-relaxed opacity-90 pl-4 border-l-2 border-[#a62c2b]/40"></p>
-              </div>
-
-              <!-- 原书分类【占】断 -->
-              <div class="space-y-2">
-                <h4 class="font-serif-sc font-bold text-sm text-[#8c6520] dark:text-amber-300 flex items-center gap-1.5">
-                  <span>◆</span>
-                  <span>《高岛易断》原书该爻分类【占】断（高亮为您所问领域）</span>
-                </h4>
-                <div id="res-takashima-zhan-grid" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></div>
-              </div>
-
-              <!-- 原书古占【例】实录 -->
-              <div class="p-4 rounded-xl bg-amber-950/[0.035] dark:bg-white/[0.035] border border-[#e4d9c5] dark:border-[#332d27] space-y-1.5">
-                <div class="flex items-center justify-between">
-                  <h4 class="font-serif-sc font-bold text-xs sm:text-sm text-[#8c6520] dark:text-amber-300">
-                    📜 《高岛易断》明治古占实例参证
-                  </h4>
-                  <span class="text-[11px] opacity-60">以古鉴今</span>
-                </div>
-                <p id="res-takashima-case" class="text-xs leading-relaxed opacity-85 font-serif-sc"></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- SECTION 4: 四、针对问事的具体解答 (Application to User's Query) -->
+          <!-- SECTION 2: 二、针对问事的具体解答 (Application to User's Query) -->
           <div class="paper-card rounded-2xl p-5 sm:p-6 space-y-4 border-2 border-[#b58938]/40">
             <div class="flex items-center justify-between border-b border-[#e4d9c5] dark:border-[#332d27] pb-3">
               <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded bg-[#a62c2b] text-white font-serif-sc text-xs font-bold flex items-center justify-center">四</span>
+                <span class="w-6 h-6 rounded bg-[#a62c2b] text-white font-serif-sc text-xs font-bold flex items-center justify-center">二</span>
                 <h3 class="font-serif-sc font-bold text-lg">针对问事的具体解答与行动方略</h3>
               </div>
               <span id="res-verdict-pill" class="px-3 py-1 rounded-full text-xs font-serif-sc font-bold"></span>
@@ -553,58 +467,11 @@
             <div id="res-application-body" class="space-y-3.5 text-sm leading-relaxed"></div>
           </div>
 
-          <!-- SECTION 5: 五、🌐 联网研习 · 权威典籍考证与全网深度检索 (Online Canonical Links & External Reference) -->
-          <div class="paper-card rounded-2xl p-5 sm:p-6 space-y-4 border border-[#e4d9c5] dark:border-[#332d27]">
-            <div class="flex items-center justify-between border-b border-[#e4d9c5] dark:border-[#332d27] pb-3">
-              <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded bg-[#b58938] text-white font-serif-sc text-xs font-bold flex items-center justify-center">五</span>
-                <h3 class="font-serif-sc font-bold text-lg flex items-center gap-2">
-                  <span>权威易学典籍考证与全网联网检索</span>
-                  <span class="text-xs font-normal px-2 py-0.5 rounded bg-amber-900/10 text-amber-900 dark:bg-amber-400/10 dark:text-amber-300">经典文献 · 历代注疏直达</span>
-                </h3>
-              </div>
-              <span class="text-xs opacity-65 font-serif-sc">全网开放易学文库</span>
-            </div>
-
-            <!-- 天时时令与干支五行旺衰考据卡片 -->
-            <div class="p-3.5 rounded-xl bg-amber-950/[0.03] dark:bg-white/[0.03] border border-[#e4d9c5] dark:border-[#332d27] space-y-2">
-              <div class="flex flex-wrap items-center justify-between gap-2">
-                <div class="flex items-center gap-2">
-                  <span class="text-sm">🗓️</span>
-                  <span class="font-serif-sc font-bold text-xs sm:text-sm text-[#8c6520] dark:text-amber-300">当前占事天时干支与五行时令气机</span>
-                </div>
-                <span id="res-ganzhi-badge" class="text-xs font-mono px-2 py-0.5 rounded bg-amber-900/10 dark:bg-amber-400/15 text-[#a62c2b] dark:text-amber-300 font-bold"></span>
-              </div>
-              <p id="res-seasonal-analysis" class="text-xs leading-relaxed opacity-90 pl-3 border-l-2 border-amber-600/40"></p>
-            </div>
-
-            <!-- 权威典籍直达专区 -->
-            <div class="space-y-2">
-              <div class="text-xs font-bold text-[#8c6520] dark:text-amber-300 font-serif-sc flex items-center gap-1.5">
-                <span>🏛️</span>
-                <span>权威公立与学术在线易典直达（点击在新标签页查阅本卦原文与历代注疏）：</span>
-              </div>
-              <div id="res-online-sources-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5"></div>
-            </div>
-
-            <!-- 针对所问之事的定向全网搜索直通车 -->
-            <div class="p-3.5 rounded-xl bg-amber-950/[0.02] dark:bg-white/[0.02] border border-[#e4d9c5] dark:border-[#332d27] space-y-2">
-              <div class="flex items-center justify-between">
-                <span class="text-xs font-serif-sc font-bold text-[#a62c2b] dark:text-amber-300 flex items-center gap-1.5">
-                  <span>🔍</span>
-                  <span>针对本卦、动爻与您所问事宜的一键全网深度搜索：</span>
-                </span>
-                <span class="text-[11px] opacity-60">实时联网汇集百家</span>
-              </div>
-              <div id="res-online-search-buttons" class="flex flex-wrap items-center gap-2"></div>
-            </div>
-          </div>
-
-          <!-- SECTION 6: 六、🤖 联网 AI 智能深度解卦与事态演进推演 (Online AI Live Divination & Reasoning) -->
+          <!-- SECTION 3: 三、🤖 联网 AI 智能深度解卦与事态演进推演 (Online AI Live Divination & Reasoning) -->
           <div class="paper-card rounded-2xl p-5 sm:p-6 space-y-4 border border-[#a62c2b]/40">
             <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#e4d9c5] dark:border-[#332d27] pb-3">
               <div class="flex items-center gap-2">
-                <span class="w-6 h-6 rounded bg-[#a62c2b] text-white font-serif-sc text-xs font-bold flex items-center justify-center">六</span>
+                <span class="w-6 h-6 rounded bg-[#a62c2b] text-white font-serif-sc text-xs font-bold flex items-center justify-center">三</span>
                 <h3 class="font-serif-sc font-bold text-lg flex items-center gap-2">
                   <span>联网 AI 大模型智能深度解卦与事态推演</span>
                   <span class="text-xs font-normal px-2 py-0.5 rounded bg-red-900/10 text-red-900 dark:bg-red-400/10 dark:text-red-300 border border-red-700/20">
@@ -751,7 +618,144 @@
               <div id="ai-result-content" class="text-xs sm:text-sm leading-relaxed whitespace-pre-wrap font-sans opacity-95"></div>
             </div>
           </div>
-        </div>
+<!-- SECTION 4: 四、卦象与爻辞 (Hexagram & Line Texts) -->
+          <div class="paper-card rounded-2xl p-5 sm:p-6 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#e4d9c5] dark:border-[#332d27] pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded bg-[#a62c2b] text-white font-serif-sc text-xs font-bold flex items-center justify-center">四</span>
+                <h3 class="font-serif-sc font-bold text-lg">卦象与爻辞（经传原文）</h3>
+              </div>
+              <!-- Quick switcher to inspect any of the 6 lines of the current hexagram -->
+              <div class="flex items-center gap-1 text-xs">
+                <span class="opacity-65 mr-1">切换参看六爻：</span>
+                <div id="line-inspector-buttons" class="flex items-center gap-1"></div>
+              </div>
+            </div>
+
+            <div class="space-y-3.5 text-sm leading-relaxed">
+              <!-- 本卦卦辞与大象传 -->
+              <div class="p-3.5 rounded-xl bg-amber-950/[0.025] dark:bg-white/[0.025] border-l-4 border-[#b58938] space-y-1.5">
+                <div class="font-serif-sc font-bold text-base" id="res-guaci-line"></div>
+                <div class="text-xs sm:text-sm opacity-85" id="res-daxiang-line"></div>
+                <div class="text-xs opacity-75" id="res-tuan-line"></div>
+              </div>
+
+              <!-- 动爻爻辞与小象传 -->
+              <div class="p-3.5 rounded-xl bg-[#a62c2b]/[0.05] dark:bg-[#a62c2b]/[0.12] border-l-4 border-[#a62c2b] space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <span class="font-serif-sc font-bold text-base text-[#a62c2b] dark:text-red-300" id="res-yaoci-line"></span>
+                  <span class="text-[11px] px-2 py-0.5 rounded bg-[#a62c2b] text-white font-serif-sc" id="res-yaoci-tag">本卦动爻</span>
+                </div>
+                <div class="text-xs sm:text-sm opacity-90" id="res-xiaoxiang-line"></div>
+              </div>
+
+              <!-- 变卦（之卦）卦辞简述 -->
+              <div class="p-3.5 rounded-xl bg-amber-950/[0.025] dark:bg-white/[0.025] border-l-4 border-stone-500 space-y-1">
+                <div class="font-serif-sc font-bold text-sm" id="res-changed-guaci-line"></div>
+                <div class="text-xs opacity-80" id="res-changed-daxiang-line"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 5: 五、高岛易断精要 (Takashima Ekidan Analysis from Book) -->
+          <div class="paper-card rounded-2xl p-5 sm:p-6 space-y-4">
+            <div class="flex items-center justify-between border-b border-[#e4d9c5] dark:border-[#332d27] pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded bg-[#a62c2b] text-white font-serif-sc text-xs font-bold flex items-center justify-center">五</span>
+                <h3 class="font-serif-sc font-bold text-lg">高岛易断精要（《高岛易断·占断破解》原典）</h3>
+              </div>
+              <span class="text-xs opacity-65 font-serif-sc">高岛吞象 著 · 王治本 译</span>
+            </div>
+
+            <div class="space-y-4 text-sm leading-relaxed">
+              <!-- 核心义理 -->
+              <div class="space-y-1.5">
+                <h4 class="font-serif-sc font-bold text-sm text-[#8c6520] dark:text-amber-300 flex items-center gap-1.5">
+                  <span>◆</span>
+                  <span>高岛吞象 · 全卦核心义理与大象总断</span>
+                </h4>
+                <p id="res-takashima-hex-summary" class="text-xs sm:text-sm leading-relaxed opacity-90 pl-4 border-l-2 border-amber-700/30"></p>
+                <div id="res-takashima-hex-zhan" class="text-xs opacity-80 pl-4 pt-1"></div>
+              </div>
+
+              <!-- 动爻断法重点 -->
+              <div class="space-y-1.5">
+                <h4 class="font-serif-sc font-bold text-sm text-[#a62c2b] dark:text-red-300 flex items-center gap-1.5">
+                  <span>◆</span>
+                  <span id="res-takashima-line-heading">高岛吞象 · 动爻义理与断法重点</span>
+                </h4>
+                <p id="res-takashima-line-comm" class="text-xs sm:text-sm leading-relaxed opacity-90 pl-4 border-l-2 border-[#a62c2b]/40"></p>
+              </div>
+
+              <!-- 原书分类【占】断 -->
+              <div class="space-y-2">
+                <h4 class="font-serif-sc font-bold text-sm text-[#8c6520] dark:text-amber-300 flex items-center gap-1.5">
+                  <span>◆</span>
+                  <span>《高岛易断》原书该爻分类【占】断（高亮为您所问领域）</span>
+                </h4>
+                <div id="res-takashima-zhan-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5"></div>
+              </div>
+
+              <!-- 原书古占【例】实录 -->
+              <div class="p-4 rounded-xl bg-amber-950/[0.035] dark:bg-white/[0.035] border border-[#e4d9c5] dark:border-[#332d27] space-y-1.5">
+                <div class="flex items-center justify-between">
+                  <h4 class="font-serif-sc font-bold text-xs sm:text-sm text-[#8c6520] dark:text-amber-300">
+                    📜 《高岛易断》明治古占实例参证
+                  </h4>
+                  <span class="text-[11px] opacity-60">以古鉴今</span>
+                </div>
+                <p id="res-takashima-case" class="text-xs leading-relaxed opacity-85 font-serif-sc"></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SECTION 6: 六、🌐 权威易学典籍考证与全网联网检索 (Online Canonical Links & External Reference) -->
+          <div class="paper-card rounded-2xl p-5 sm:p-6 space-y-4 border border-[#e4d9c5] dark:border-[#332d27]">
+            <div class="flex items-center justify-between border-b border-[#e4d9c5] dark:border-[#332d27] pb-3">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded bg-[#b58938] text-white font-serif-sc text-xs font-bold flex items-center justify-center">六</span>
+                <h3 class="font-serif-sc font-bold text-lg flex items-center gap-2">
+                  <span>权威易学典籍考证与全网联网检索</span>
+                  <span class="text-xs font-normal px-2 py-0.5 rounded bg-amber-900/10 text-amber-900 dark:bg-amber-400/10 dark:text-amber-300">经典文献 · 历代注疏直达</span>
+                </h3>
+              </div>
+              <span class="text-xs opacity-65 font-serif-sc">全网开放易学文库</span>
+            </div>
+
+            <!-- 天时时令与干支五行旺衰考据卡片 -->
+            <div class="p-3.5 rounded-xl bg-amber-950/[0.03] dark:bg-white/[0.03] border border-[#e4d9c5] dark:border-[#332d27] space-y-2">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                  <span class="text-sm">🗓️</span>
+                  <span class="font-serif-sc font-bold text-xs sm:text-sm text-[#8c6520] dark:text-amber-300">当前占事天时干支与五行时令气机</span>
+                </div>
+                <span id="res-ganzhi-badge" class="text-xs font-mono px-2 py-0.5 rounded bg-amber-900/10 dark:bg-amber-400/15 text-[#a62c2b] dark:text-amber-300 font-bold"></span>
+              </div>
+              <p id="res-seasonal-analysis" class="text-xs leading-relaxed opacity-90 pl-3 border-l-2 border-amber-600/40"></p>
+            </div>
+
+            <!-- 权威典籍直达专区 -->
+            <div class="space-y-2">
+              <div class="text-xs font-bold text-[#8c6520] dark:text-amber-300 font-serif-sc flex items-center gap-1.5">
+                <span>🏛️</span>
+                <span>权威公立与学术在线易典直达（点击在新标签页查阅本卦原文与历代注疏）：</span>
+              </div>
+              <div id="res-online-sources-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2.5"></div>
+            </div>
+
+            <!-- 针对所问之事的定向全网搜索直通车 -->
+            <div class="p-3.5 rounded-xl bg-amber-950/[0.02] dark:bg-white/[0.02] border border-[#e4d9c5] dark:border-[#332d27] space-y-2">
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-serif-sc font-bold text-[#a62c2b] dark:text-amber-300 flex items-center gap-1.5">
+                  <span>🔍</span>
+                  <span>针对本卦、动爻与您所问事宜的一键全网深度搜索：</span>
+                </span>
+                <span class="text-[11px] opacity-60">实时联网汇集百家</span>
+              </div>
+              <div id="res-online-search-buttons" class="flex flex-wrap items-center gap-2"></div>
+            </div>
+          </div>
+
       </div>
     </section>
 
@@ -1877,12 +1881,16 @@
         `  - 下卦数：${l}（${lowerTri.name}为${lowerTri.nature} ${lowerTri.symbol}）`,
         `  - 动爻数：${z}（${ln.t}爻动）`,
         `  - 本卦：《${origHex.name}》 ➔ 变卦（之卦）：《${changedHex.name}》`,
-        `二、卦象与爻辞：`,
+        `二、针对问事的具体解答与行动方略：`,
+        `  - 核心定性：结合《${origHex.name}》${ln.t}与变卦《${changedHex.name}》之断法`,
+        `三、联网 AI 大模型实机深度推演（如有）：`,
+        lastAiFullResponseText ? `  ${lastAiFullResponseText.slice(0, 300)}...` : `  （可在网页端调用 Gemini / DeepSeek 实时流式生成）`,
+        `四、卦象与爻辞：`,
         `  - 本卦卦辞：${origHex.gc}`,
         `  - 本卦大象：${origHex.dx}`,
         `  - 动爻爻辞：${ln.t}：${ln.y}（《象传》：${ln.x}）`,
         `  - 变卦卦辞：《${changedHex.name}》${changedHex.gc}`,
-        `三、高岛易断精要：`,
+        `五、高岛易断精要：`,
         `  - 全卦总论：${origHex.sum}`,
         `  - 动爻义理：${ln.c}`,
         `  - 原书占断：${ln.z}`,
